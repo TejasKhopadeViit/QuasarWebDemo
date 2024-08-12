@@ -509,8 +509,8 @@ section {
 }
 
 .associate-image img {
-    width: 100%;
-    height: 700px;
+    width: 400px;
+    height: 500px;
     object-fit: cover;
 }
 .associate-section h2{

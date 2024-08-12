@@ -1,0 +1,551 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css');
+
+body {
+    margin: 0;
+    padding: 0;
+}
+section {
+    padding-top: 0px; /* Adjust according to your navbar height */
+    margin-top: -0px; /* Same value as padding-top */
+}
+
+/* Navbar styles */
+.navbar-transparent {
+    background-color: transparent;
+    transition: background-color 0.3s, border 0.3s;
+    position: fixed; /* Ensure navbar stays fixed on top */
+    width: 100%; /* Ensure navbar takes full width */
+    top: 0; /* Ensure navbar is at the top */
+    z-index: 1000; /* Ensure navbar is above other content */
+}
+
+.navbar-transparent.border-scrolled {
+    background-color: white; /* White background on scroll */
+   
+}
+
+.navbar-brand img {
+    max-height: 50px; /* Adjust logo size */
+    width: auto; /* Maintain aspect ratio */
+}
+/* Navbar link colors */
+.navbar-nav .nav-link {
+    color: black; /* Default color for nav links */
+    transition: color 0.3s; /* Smooth transition for color change */
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+    color: rgb(82, 82, 220); /* Color on hover and focus */
+}
+
+.navbar-nav .nav-link.active {
+    color:   rgb(82, 82, 220); /* Color for the active/current link */
+    font-weight: bold; /* Optional: Make the active link bold */
+}
+
+
+.wrapper {
+    overflow: hidden; /* Ensure wrapper does not have any scroll issues */
+}
+
+header {
+    position: relative;
+    height: 100vh; /* Ensure header takes full viewport height */
+    margin-bottom: 0; /* Ensure no extra margin at the bottom */
+}
+
+.parallax {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background: url('../image/img/banner01.png') no-repeat center center;
+ background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.content {
+    position: relative;
+    color: rgb(0, 0, 0);
+}
+
+.title {
+    font-size: 4rem; /* Adjust as needed */
+    margin: 0;
+}
+
+.subtitle {
+    font-size: 1.5rem; /* Adjust as needed */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2); /* White overlay with 20% opacity */
+    z-index: 0; /* Ensure overlay is below the text */
+}
+
+
+
+
+section {
+    font-size: 16px;
+    padding: 2rem;
+    background-color: rgb(221, 216, 216);
+    color: rgb(0, 0, 0);
+    margin: 0; /* Remove margin to ensure proper spacing */
+}
+
+.section {
+    background-color:#e9f0f8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px;
+    width: 100%; 
+
+}
+
+.section .author {
+    text-align: left; /* Align text to the left */
+    margin-top: 10px; /* Space between image and text */
+    font-style: italic; /* Optional: make text italic */
+}
+
+
+.section h1 {
+    
+    color: goldenrod;
+
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+.gradient-text {
+    background: linear-gradient(to right, #de9e13, #218d32); /* Customize gradient colors as needed */
+    -webkit-background-clip: text; /* For Chrome, Safari */
+    -webkit-text-fill-color: transparent; /* For Chrome, Safari */
+    background-clip: text; /* For other browsers */
+    color: transparent; /* Ensure the text color itself is transparent */
+    font-size: 3em; /* Optional: Adjust the font size */
+    font-weight: bolder; /* Optional: Make the text bold */
+  }
+  
+.section .container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    
+    max-width: 1200px; /* Adjust max-width as needed */
+}
+
+.section .text {
+    text-align: justify;
+    text-justify: inter-word;
+    flex: 1;
+    margin-top: 40px;
+    font-size: 20px;
+    padding-right: 30px;
+    margin-right: 10px; /* Add space between text and image */
+}
+
+.section .text p {
+    font-weight: 100;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: justify;
+    margin: 0;
+    
+}
+
+.section .pajji {
+    flex: 1;
+    margin-top: 40px;
+    position: relative;
+ 
+}
+
+.section .pajji img {
+    width: 130%;
+    height: auto;
+}
+.pajji .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2); /* Ensure it covers the image correctly */
+    z-index: 1; /* Ensure it sits above the image */
+}
+.pajji img {
+    display: block;
+    width: 100%; /* Ensure the image fills the container */
+    height: auto; /* Maintain aspect ratio */
+    position: relative; /* Ensure the overlay is above the image */
+    z-index: 0; /* Ensure image is below the overlay */
+}
+
+
+
+
+/* Existing CSS... */
+/* Existing CSS... */
+
+/* Extra Section Styles */
+/* Existing CSS... */
+
+/* Extra Section Styles */
+.extra-section {
+    padding: 60px 20px; /* Increase padding */
+    background-color: #e9f0f8;
+    margin-top: 20px;
+    position: relative;
+}
+
+/* What We Offer Section */
+
+
+.what-we-offer {
+    padding: 50px 20px;
+    background-color: #f8f9fa;
+ 
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    background: linear-gradient(to right, orange, green);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.card {
+    border: none; /* Remove default border */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    background: #ece6e6aa; /* White background */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Ensure cards are of equal height */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Slightly enlarge card on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* More pronounced shadow on hover */
+}
+
+.card-body {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distribute space evenly */
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.card i {
+    color: #de7d1d; /* Icon color */
+}
+
+.list-unstyled li {
+    margin-bottom: 10px;
+}
+
+.card-deck {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card-deck .card {
+    flex: 1;
+    max-width: 100%;
+}
+
+
+.extra-heading {
+    text-align: center;
+    background: linear-gradient(90deg, #e97917, #ffa60b, #ff9c06, #48cae4, #90e0ef); /* Adjust gradient colors as needed */
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;  /* Darker hue color for heading */
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.extra-content-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Adjust gap for better spacing */
+    justify-content: space-between;
+}
+
+.extra-content {
+    flex: 1 1 30%; /* Ensure boxes take proper width and don't overflow */
+    padding: 20px;
+    border: 3px solid hsl(210, 100%, 70%);
+    background-color: #e9f0f8;
+    box-sizing: border-box;
+}
+
+.extra-content::before,
+.extra-section::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+.extra-content::before {
+    top: 0;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    border-top: none;
+    border-right: none;
+    border-radius: 0 0 0 10px;
+}
+
+.extra-content::after {
+    bottom: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border-bottom: none;
+    border-left: none;
+    border-radius: 10px 0 0 0;
+}
+
+.extra-content h3 {
+    margin-top: 0;
+    color: hsl(210, 100%, 40%);
+}
+
+.extra-content p {
+    color: #333;
+}
+
+
+
+/* Border with cut-out corners */
+.offer-box::before,
+.offer-box::after {
+    content: "";
+    position: absolute;
+    border: 2px solid hsl(210, 100%, 70%);
+    background-color: white;
+}
+
+.offer-box::before {
+    top: 0;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    border-top: none;
+    border-right: none;
+    border-radius: 0 0 0 8px;
+}
+
+.offer-box::after {
+    bottom: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border-bottom: none;
+    border-left: none;
+    border-radius: 8px 0 0 0;
+}
+
+.business-section {
+    height: 100vh; /* Full screen height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f9fa; /* Background color for the section */
+    padding: 0; /* Remove any padding to ensure it fits the screen */
+    box-sizing: border-box;
+}
+/*ASDHBSJAHBDJHASB*/
+.oo-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color:#f8f9fa;
+}
+
+.grid2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    width: 100%;
+    max-width: 1200px; /* Adjust as needed */
+    margin-top: 20px;
+}
+.b-box {
+    border: 2px solid hsl(210, 100%, 70%);
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    text-align: center;
+    border-radius: 8px;
+    box-sizing: border-box;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.b-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.b-box i {
+    font-size: 2rem; /* Adjust size as needed */
+    color: hsl(210, 100%, 50%); /* Adjust color as needed */
+    margin-bottom: 10px;
+}
+
+.b-box h3 {
+    margin-top: 10px;
+    color: hsl(210, 100%, 40%);
+}
+
+/*       */
+/* Ensure the section takes up the full width of the screen */
+.partners {
+    width: 100%;
+    padding: 50px 10%; /* Top padding with 10% left-right padding */
+    background-color: #e9f0f8;
+    box-sizing: border-box;
+}
+
+.partners h1 {
+    background: linear-gradient(to right, orange, green, blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center; /* Align the heading to the left */
+}
+
+.partner-section {
+    display: flex;
+    align-items: flex-start; /* Ensure items align at the top */
+    justify-content: space-between;
+    width: 100%;
+    text-align: left;
+    margin: 20px 0;
+}
+
+.partner-section img {
+    width: 45%; /* Keep image within 45% of the container */
+    height: auto;
+    margin-right: 5%; /* Space between image and content */
+}
+
+.partner-section .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Ensure content starts from the top */
+    width: 50%;
+}
+
+.partner-section h2 {
+    color: rgb(0, 82, 140); /* Deep blue color */
+    font-size: 2em;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+
+.partner-section p {
+    font-weight: 100;
+    font-size: 1.1em;
+    line-height: 1.6;
+    text-align: justify;
+    margin: 0;
+}
+
+/* Associate Section */
+.associate-section {
+    width: 100%;
+    height: auto;
+    padding: 50px 10%; /* Match padding with partners section */
+    box-sizing: border-box;
+    background-color: #e9f0f8; /* Background color for contrast */
+    
+}
+
+.associate-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.associate-content {
+    width: 50%;
+    padding-right: 5%; /* Match the gap with the partner section */
+    text-align: justify;
+}
+
+.associate-image {
+    width: 45%; /* Match the image width with the partner section */
+}
+
+.associate-image img {
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+}
+.associate-section h2{
+    color: rgb(0, 82, 140); /* Deep blue color */
+    font-size: 2em;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+.associate-section p{
+    font-weight: 100;
+    font-size: 1.1em;
+    line-height: 1.6;
+    text-align: justify;
+    margin: 0;
+}
+
+
+.gradient-text {
+    background: linear-gradient(to right, #e69e0d, #2a5e0e); /* Customize gradient colors */
+    -webkit-background-clip: text; /* For Chrome, Safari */
+    -webkit-text-fill-color: transparent; /* For Chrome, Safari */
+    background-clip: text; /* For other browsers */
+    color: transparent; /* Ensure the text color itself is transparent */
+    font-size: 2em; /* Adjust font size */
+    font-weight: bold; /* Make text bold */
+  }
+  
+  .footer {
+    background-color: #007bff; /* Bootstrap primary color */
+  }
+  .contact us .container{
+    text-align: center;
+  }
+  
+  .social-icons i {
+    font-size: 1.5em; /* Adjust icon size */
+  }
+  
